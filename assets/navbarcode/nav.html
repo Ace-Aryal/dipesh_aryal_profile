@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <nav class="my-5">
+        <div class="nav-desktop flex justify-around">
+          <h1 class="Logo text-xl font-semibold hover:text-cyan-500 transition-all delay-150 hover:scale-110   ">Dipesh
+            Aryal</h1>
+            <div class="sidebar">
+           
+      </div>
+      <div class="nav-links sm:static sm:w-auto
+       sm:min-h-fit absolute bg-white min-h-[40vh] left-0 top-[-100%]  w-full flex items-center px-5 ">
+          <ul class="flex space-x-7 py-1 items-start gap-8
+             sm:flex-row flex-col 
+          ">
+            <li
+              class="ml-[28px] nav-item hover:text-cyan-500 hover:border  hover:border-cyan-500 hover:border-0 hover:border-b-2 ">
+              <a href="#about"> About</a>
+            </li>
+            <li
+              class="nav-item hover:text-cyan-500 hover:border  hover:border-cyan-500 hover:border-0 hover:border-b-2 ">
+             <a href="#exp"> Experience</a>
+            </li>
+            <li
+              class="nav-item hover:text-cyan-500 hover:border  hover:border-cyan-500 hover:border-0 hover:border-b-2 ">
+             <a href="#project"> Projects</a>
+            </li>
+            <li
+              class="nav-item hover:text-cyan-500 hover:border  hover:border-cyan-500 hover:border-0 hover:border-b-2 ">
+              <a href="#contact"> Contact </a>
+            </li>
+           
+          </ul>
+        </div>
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer sm:hidden"></ion-icon>
+        </div>
+      </nav>
+      <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+          e.name = e.name === 'menu' ? 'close' :  'menu'
+          navLinks.classList.toggle('top-[9%]')
+        }
+      </script>
+</body>
+</html>
