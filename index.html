@@ -19,7 +19,7 @@
 
 <body  class=" bg-gradient-to-br from-cyan-200 via-gray-200 to-orange-200 ">
   <nav class="my-5">
-    <div class="nav-desktop flex justify-around">
+    <div class="nav-desktop flex justify-between pl-7 pr-5">
       <h1 class="Logo text-xl font-semibold hover:text-cyan-600 transition-all delay-150 hover:scale-110   ">Dipesh
         Aryal</h1>
         <div class="sidebar">
@@ -286,8 +286,19 @@
          <p>Dipesh Aryal</p>
        </div>
      </div>
+     <br><br><br>
+     <h1 class="text-center text-lg text-gray-600 ">Leave a Message </h1>
 
-   </div>
+   </div><br>
+   <form action="https://formspree.io/f/xdoqpkgg" method="POST"
+      class="flex flex-col gap-5 w-[100%] items-center ">
+         <input type="text" name="Name" required id="name" placeholder="Your Full Name " class="focus:outline-none  focus:ring-2 focus:ring-blue-500 border  focus:border-blue-500 w-[70%] sm:w-[50%] rounded-lg py-3 pl-2 pr-10 text-left  " >
+         <input type="email" name="Email" required id="email" placeholder="Email"  class="focus:outline-none  focus:ring-2 focus:ring-blue-500 border  focus:border-blue-500  w-[70%] sm:w-[50%]  rounded-lg py-3 pl-2 pr-10 text-left focus:invalid:text-red-500 ">
+         <textarea type="textarea" name="Message"" id="message" placeholder="Your Message..."class=" focus:outline-none  focus:ring-2 focus:ring-blue-500   w-[70%] sm:w-[50%] rounded-lg py-3 pl-2 pr-10 text-left " rows="4"></textarea>      
+         <button type="submit" id="message"  class=" border focus:ring-blue-500 focus:border-blue-500   rounded-3xl py-2.5 pl-2 pr-2 text-left w-fit bg-orange-400 text-white self-center hover:bg-white hover:text-black">Send Message</button>      
+         
+             </form>
+   
   </section>
 
   <footer class="mt-32">
@@ -296,7 +307,9 @@
     <li><a href="#exp">Experience</a></li>
     <li><a href="#project">Projects</a></li>
     <li><a href="#about">Contact</a></li></ul></div>
+    <br>
     <div><p class=" text-center text-[0.75rem]pb-3">Copyright © 2024  Dipesh Aryal  All Rights Reserved</p></div>
+    <br>
   </footer>
 </body>
 
