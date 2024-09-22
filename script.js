@@ -1,9 +1,18 @@
-function toggleMenu(){
+const displayQuote = document.querySelector ("#quote")
+const author = document.querySelector ("#author")
 
 
-    const menu =  document.querySelector(".menu-links");
-    const menu =  document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    menu.classList.toggle("open");
+window.addEventListener('load' , e=> {
+fetch('https://dummyjson.com/quotes/random')
+  .then(response => response.json())
+  .then(data => {
+    // Handle the retrieved quote
+    displayQuote.innerText = data.quote
+    author.innerText += data.author
     
-}
+  })
+  .catch(error => {
+    // Handle any errors
+    console.error(error);
+  });
+})
