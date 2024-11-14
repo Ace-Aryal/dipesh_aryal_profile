@@ -1,6 +1,6 @@
 const displayQuote = document.querySelector ("#quote")
 const author = document.querySelector ("#author")
-
+const copyrightFooter = document.querySelector ("#copyright")
 
 window.addEventListener('load' , e=> {
 fetch('https://dummyjson.com/quotes/random')
@@ -16,3 +16,4 @@ fetch('https://dummyjson.com/quotes/random')
     console.error(error);
   });
 })
+copyrightFooter.innerHTML = `Copyright <span>&copy;</span> ${new Date().getFullYear()}  Dipesh Aryal  All Rights Reserved`
